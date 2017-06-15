@@ -22,7 +22,7 @@
     <!-- fim row -->
     <br>
     <div class="row">
-        <painel *ngFor="let foto of fotos | filtroPorTitulo : textoProcurado.value" titulo="{{foto.titulo}}" class="col-md-2">
+        <painel *ngFor="let foto of fotos | filtroPorTitulo : textoProcurado.value" titulo="{{foto.titulo| uppercase}}" class="col-md-2">
             <foto titulo="{{foto.titulo}}" url="{{foto.url}}">
             </foto>
         </painel>
