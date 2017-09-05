@@ -9,6 +9,5 @@ import { Component, Input } from '@angular/core';
 export class FotoComponent {
     @Input() titulo : string;
     @Input() url : string;escricao: string;
-
-
+    _id : string;
 }
