@@ -28,6 +28,11 @@ var FotoService = (function () {
     FotoService.prototype.remove = function (foto) {
         return this.http.delete(this.url + '/' + foto._id);
     };
+    FotoService.prototype.buscaPorId = function (id) {
+        return this.http
+            .get(this.url + '/' + id)
+            .map(function (res) { return res.json(); });
+    };
     return FotoService;
 }());
 FotoService = __decorate([
