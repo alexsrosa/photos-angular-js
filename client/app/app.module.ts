@@ -8,13 +8,22 @@ import { HttpModule } from '@angular/http';
 import { PainelModule } from './painel/painel.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
+import { BotaoModule } from './botao/botao.module';
 
 import { routing } from './app.routes';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports:      [ BrowserModule, FotoModule, HttpModule, PainelModule, routing, FormsModule, ReactiveFormsModule],
+  imports:      [ BrowserModule, 
+                  FotoModule, 
+                  HttpModule, 
+                  PainelModule, 
+                  routing, 
+                  FormsModule, 
+                  ReactiveFormsModule, 
+                  BotaoModule
+                ],
   declarations: [ AppComponent, CadastroComponent, ListagemComponent],
   bootstrap:    [ AppComponent ]
 })
