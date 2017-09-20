@@ -9,6 +9,7 @@ import { PainelModule } from './painel/painel.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { BotaoModule } from './botao/botao.module';
+import { ModalModule } from './modal/modal.module';
 
 import { routing } from './app.routes';
 
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
                   routing, 
                   FormsModule, 
                   ReactiveFormsModule, 
-                  BotaoModule
+                  BotaoModule, 
+                  ModalModule
                 ],
   declarations: [ AppComponent, CadastroComponent, ListagemComponent],
   bootstrap:    [ AppComponent ]
